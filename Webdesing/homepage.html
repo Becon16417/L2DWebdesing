@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>培根Bacon</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      height: 100vh;
+      background: linear-gradient(to bottom, #3f8ed8 50%, #cde4f7);
+    }
+
+    .content-wrapper {
+      position: fixed;
+      top: 50px;
+      left: 50px;
+      right: 50px;
+      bottom: 50px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      z-index: 0;
+    }
+
+    .avatar-container {
+      position: fixed;
+      padding-top: 200px;
+      left: 0;
+      width: 50vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      box-sizing: border-box;
+      z-index: 1;
+    }
+
+    .avatar-container img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .avatar-text {
+      margin-top: 15px;
+      font-size: 60px;
+      color: #333;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .avatar-subtext {
+      margin-top: 8px;
+      font-size: 20px;
+      color: #333;
+      text-align: left;
+    }
+
+    .button-container {
+      position: fixed;
+      top: 35%;
+      right: 500px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      z-index: 1;
+    }
+
+    .button-container button {
+      padding: 10px 70px;
+      background-color: #A17F59;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 24px;
+      transition: background 0.3s;
+    }
+
+    .button-container button:hover {
+      background-color: #7e5d3f;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 半透明白色背景框 -->
+  <div class="content-wrapper"></div>
+
+  <!-- 左側頭像與文字 -->
+  <div class="avatar-container">
+    <div class="avatar-content">
+      <img src="3a0bf1f8-cf19-4e33-9dad-5bbdd91c6473.png" alt="我的頭像" />
+      <p class="avatar-text">培根bacon</p>
+      <p class="avatar-subtext">Live2D動畫/Vtuber用模型/小說</p>
+      <p class="avatar-subtext">目前為學生，低價，快速，品質佳。</p>
+      <p class="avatar-subtext">主要接洽Vtuber用模型、文字相關工作</p>
+    </div>
+  </div>
+
+  <!-- 右側按鈕 -->
+  <div class="button-container">
+    <button onclick="window.location.href = 'https://becon16417.github.io/L2DWeb/網頁設計期末/Live2D展示'">Live2D建模</button>
+  
+  </div>
+
+</body>
+</html>

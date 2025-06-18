@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>培根Live2D建模</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      background: linear-gradient(to bottom, #3f8ed8 60%, #cde4f7);
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    body {
+      font-family: sans-serif;
+      padding-top: 40px;
+      box-sizing: border-box;
+      padding: 20px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* 原本固定的半透明框 */
+    .wrapper {
+      position: relative;
+      margin-top: 40px;
+      width: 90%;
+      max-width: 1500px;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      padding: 20px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      overflow: visible; /* 內容不滾動 */
+      z-index: 10;
+    }
+
+    .wrapper2 {
+      position: relative;
+      margin-top: 40px;
+      width: 90%;
+      max-width: 1500px;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      padding: 20px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      gap: 10px;
+      overflow: visible; /* 內容不滾動 */
+      z-index: 10;
+    }
+
+    .wrapper2 p{
+      line-height: 0.9;
+      margin: 6px 0;
+    }
+
+    
+    .wrapper2 .emphasis{
+        font-size: 30px;
+        font-weight: bold;
+        color: #222;
+    }
+
+    .wrapper2 .anothertext{
+        font-size: 16px;
+        font-weight: normal;
+        color: #222;
+
+    }
+
+    .left-text {
+      align-self: flex-start;
+      color: #333;
+      font-size: 18px;
+      line-height: 1.5;
+      text-align: left;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    h1 {
+      margin: 0 0 40px 0;
+      text-align: center;
+      font-size: 60px;
+      color: #333;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 150px;
+    }
+
+    button {
+      padding: 12px 40px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #A17F59;
+      color: white;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #7a6343;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Live2D建模</h1>
+    <div class="button-group">
+      <button onclick="window.location.href = 'https://www.youtube.com/playlist?list=PLpQrOk4uwA6YwU9ss3zUGo0f5VINYz18P'">模型展示</button>
+      <button onclick="window.location.href = 'https://becon16417.github.io/L2DWeb/網頁設計期末/優惠'">優惠參考</button>
+      <button onclick="window.location.href = 'https://becon16417.github.io/L2DWeb/網頁設計期末/首頁'">回首頁</button>
+    </div>
+
+    <div class="left-text">
+      <p>如何委託</p>
+      <p>委託請至信箱：bacon16417@gmail.com</p>
+      <p><strong>簡單的自我介紹</strong></p>
+      <p>如何稱呼您，使用中或未來會使用的社交平台網址以及串流平台網址。以及如何聯絡您。</p>
+      <p><strong>委託的內容與預算</strong></p>
+      <p>1.期望的規格與您的預算</p>
+      <p>2.相關檔案，未繪製請告知繪製完成日期（可以的話請附上參考圖）</p>
+      <p>3.相關按鍵與動畫需求（表情、衣服越詳細越好估價）</p>
+      <p>4.預計完成時間</p>
+      <p><strong>付款方式</strong></p>
+      <p>目前僅支援銀行轉帳</p>
+      <p><strong>請詳閱上述內容再寄送委託文件</strong></p>
+    </div>
+  </div>
+
+  <div class="wrapper2">
+    <h2>Live2D建模價格參考</h2>
+    <p>面補軟體統一使用VtuberStudio為基準，若有搭配iphone使用請事前告知。</p>
+    <p>立繪檔案可能會在檢查後需要修改檔案，若繪師無法修改，則會斟酌收取修改費用。</p>
+    <p>若是需要模型優化或是升級，價格請私訊討論。</p>
+    <p>模型僅提供運作檔，若需要工程檔則價格另議。</p>
+    <p>循環動畫或是動畫按鍵價格另議。新衣裝、髮型、配件等差分製作價格另議。</p>
+    <p class="emphasis"><strong>初階建模 15000NT↑</strong></p>
+    <p class="anothertext">適合只有半身的立繪。</p>
+    <p class="anothertext">僅製作頭部XYZ以及頭部物理。</p>
+    <p class="anothertext">頭部以下不會動，嘴部僅製作開合。</p>
+    <p class="anothertext">僅提供運作檔，不提供建模原檔案。</p>
+    <p class="emphasis"><strong>中階建模 20000NT↑</strong></p>
+    <p class="anothertext">預設三表情，無表情，微笑，生氣。</p>
+    <p class="anothertext">胸口以下幾乎不移動，身體僅製作YZ軸、九口型</p>
+    <p class="anothertext">部分物理簡易製作。</p>
+    <p class="anothertext">僅提供運作檔。不提供建模原檔案。</p>
+    <p class="emphasis"><strong>高階建模 30000NT↑</strong></p>
+    <p class="anothertext">全身物理製作。</p>
+    <p class="anothertext">以建模師能力之極限製作。</p>
+    <p class="anothertext">僅提供運作檔，不提供建模原檔案。</p>
+    <p class="emphasis"><strong>額外表情/按鍵 1000NT/個</strong></p>
+    <p class="emphasis"><strong>模型完成後額外追加表情 2000NT/個</strong></p>
+  </div>
+</body>
+</html>

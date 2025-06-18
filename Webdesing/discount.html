@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>優惠參考</title>
+    <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      background: linear-gradient(to bottom, #3f8ed8 60%, #cde4f7);
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    body {
+      font-family: sans-serif;
+      padding-top: 40px;
+      box-sizing: border-box;
+      padding: 20px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* 原本固定的半透明框 */
+    .wrapper {
+      position: relative;
+      margin-top: 40px;
+      width: 90%;
+      max-width: 1500px;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      padding: 20px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      overflow: visible; /* 內容不滾動 */
+      z-index: 10;
+    }
+
+    .wrapper .emphasis{
+        font-size: 30px;
+        font-weight: bold;
+        color: #222;
+    }
+
+    .wrapper .anothertext{
+        font-size: 16px;
+        font-weight: normal;
+        color: #222;
+
+    }
+
+    .left-text {
+      align-self: flex-start;
+      color: #333;
+      font-size: 18px;
+      line-height: 1.5;
+      text-align: left;
+      width: 100%;
+      max-width: 800px;
+    }
+
+     .button-group {
+      display: flex;
+      gap: 150px;
+    }
+
+    button {
+      padding: 12px 40px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #A17F59;
+      color: white;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #7a6343;
+    }
+
+    </style>
+</head>
+<body>
+    
+</body>
+<body>
+  <div class="wrapper">
+    <h1>優惠參考</h1>
+    <div class="button-group">
+      <button onclick="window.location.href = 'https://becon16417.github.io/L2DWeb/網頁設計期末/Live2D展示'">Live2D建模</button>
+      <button onclick="window.location.href = 'https://becon16417.github.io/L2DWeb/網頁設計期末/首頁'">回首頁</button>
+    </div>
+
+    <div class="left-text">
+      <p class="emphasis"><strong>目前優惠</strong></p>
+      <p class="anothertext">因為目前仍是學生原故，故所有建模價格均有打折。</p>
+      <p class="emphasis"><strong>初階建模 2000NT↑</strong></p>
+      <p class="emphasis"><strong>中階建模 3500NT↑</strong></p>
+      <p class="emphasis"><strong>高階建模 5000NT↑</strong></p>
+      <p class="emphasis"><strong>額外表情/按鍵 100NT/個</strong></p>
+      <p class="emphasis"><strong>模型完成後額外追加表情 200NT/個</strong></p>
+      <P class="anothertext">且現在委託含無限次修改以及半年售後修改、追加。</P>
+    </div>
+  </div>
+</body>
+</html>
+
